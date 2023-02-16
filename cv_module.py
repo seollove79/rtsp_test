@@ -2,9 +2,9 @@
 
 import cv2
 
-def get_stream_video():
+def get_stream_video(rtsp_url):
     # camera 정의
-    cam = cv2.VideoCapture(0)
+    cam = cv2.VideoCapture(rtsp_url)
 
     while True:
         # 카메라 값 불러오기

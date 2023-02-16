@@ -13,7 +13,7 @@ app = FastAPI()
 
 # openCV에서 이미지 불러오는 함수
 def video_streaming():
-    return get_stream_video()
+    return get_stream_video("rtsp://admin:suhwooms0792%@61.82.34.191:554/Streaming/Channels/0401")
 
 # 스트리밍 경로를 /video 경로로 설정.
 @app.get("/video")
